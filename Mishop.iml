@@ -57,5 +57,7 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-web:5.1.9.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:5.3.11" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.3.11" level="project" />
+    <orderEntry type="library" name="druid-1.0.9" level="project" />
+    <orderEntry type="library" name="Mishop-lib" level="project" />
   </component>
 </module>
