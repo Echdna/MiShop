@@ -1,0 +1,31 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /Mishop
+
+spring:
+  # 整合数据库
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///mishop?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 123456
+    druid:
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+      test-on-borrow: true
+      stat-view-servlet:
+        allow: true
+  # 整合Redis
+  resources:
+    static-locations: classpath:templates/,classpath:static/
+  # 图片上传
+  servlet:
+    multipart:
+      max-request-size: 10MB
+      max-file-size: 5MB
+
+# 配置Mybatis的mapper文件扫描的路
+mybatis:
+  mapper-locations: classpath:mappers/*.xml
